@@ -1,0 +1,9 @@
+Feature: Crear una cuenta en opencart.abstracta
+
+  Scenario: Registro exitoso
+    Given que estoy en la página de inicio
+    When hago clic en el enlace "Myaccount-Register"
+    And completo el formulario de registro con nombre "tester", apellido "auto", correo "quierosertesterauto@gmail.com", teléfono "0800" , contraseña "1234"y
+    confirmar contraseña "1234"
+    Then veo un mensaje de confirmación de registro
+
